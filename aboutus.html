@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EL Nurado - About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=Forum&family=Lato:wght@100..900&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Fonts Links-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Universal styling of fonts is applied to every single page. -->
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', serif;
+        }
+    </style>
+   
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./images/LOGO.png" alt="logo" width="100"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-white">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="cart-icon"><i class="fas fa-cart-plus"></i> <span id="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Content Section -->
+    <div class="bg-black text-white"> 
+    <div class="container py-5">
+    <div class="text-center mb-4">
+        <h2>About Us</h2>
+    </div>
+    <div class="text-center">
+        <p>EL Nurado is a fashion brand that prides itself on creating stylish and high-quality products. Our mission is to offer timeless fashion that transcends trends. We combine modern design with classic aesthetics to create pieces that are both stylish and wearable.</p>
+        <p>Founded in 1975 in Northumbria, we are committed to bringing sustainable, ethical fashion to the world. Our materials are sourced responsibly, and we prioritize fair labor practices throughout our production process.</p>
+        <p>At EL Nurado, we believe that fashion should be inclusive, empowering, and expressive. Our collections are designed for individuals who value craftsmanship and uniqueness. We are constantly evolving, staying ahead of the curve with fresh styles and innovative designs.</p>
+    </div>
+
+    <!-- CEO Section -->
+    <div class="row align-items-center mt-4">
+        <div class="col-md-3 text-center">
+          <img src="Images/ceo.jpg" alt="CEO" class="img-fluid rounded-circle mb-3" style="width:220px; height:220px; object-fit:cover;">
+        </div>
+        <div class="col-md-9">
+          <h3>Meet Our CEO</h3>
+          <p>Our CEO, Lado EL Nurado, is a visionary leader with over 25 years of experience in the fashion industry. Under Lado EL Nurado's leadership, EL Nurado has become a benchmark for innovation, sustainability, and timeless style.</p>
+          <p><strong>Key Achievements:</strong></p>
+          <ul>
+            <li>Founded the company in 1975 and transformed it into a global fashion brand.</li>
+            <li>Implemented sustainable production practices that set industry standards.</li>
+            <li>Won multiple awards for innovation, design, and ethical business practices.</li>
+            <li>Mentored the next generation of designers and industry leaders.</li>
+          </ul>
+          <p>With a passion for excellence and a commitment to social responsibility, Lado EL Nurado continues to drive the brand forward, ensuring that every piece of fashion not only looks good but also supports a better, more sustainable future.</p>
+        </div>
+      </div>
+    
+    <!-- Feedback Section -->
+    <div class="feedback-section mt-5">
+        <h3 class="text-center">We'd Love Your Feedback!</h3>
+        <p class="text-center">Please share your thoughts about our brand, website, or any suggestions you may have:</p>
+        <form action="/submit" method="post" class="w-75 mx-auto">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name: <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address: <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="clothing-type" class="form-label">Favorite Clothing Type:</label>
+                <select class="form-select" id="clothing-type" name="clothing-type">
+                    <option value="shirts">Shirts</option>
+                    <option value="pants">Pants</option>
+                    <option value="dresses">Dresses</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="size" class="form-label">Clothing Size: <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="size" name="size" required>
+            </div>
+            <div class="mb-3">
+                <label for="price-range" class="form-label">Preferred Price Range:</label>
+                <input type="text" class="form-control" id="price-range" name="price-range">
+            </div>
+            <div class="mb-3">
+                <label for="style" class="form-label">Preferred Style:</label>
+                <input type="text" class="form-control" id="style" name="style">
+            </div>
+            <div class="mb-3">
+                <label for="shipping" class="form-label">Shipping Method:</label>
+                <select class="form-select" id="shipping" name="shipping">
+                    <option value="standard">Standard</option>
+                    <option value="express">Express</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn-custom fw-bold">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+    <!--Footer Section-->
+    <footer>
+        <div class="logo">
+            <img src="./images/LOGO.png" alt="EL Nurado" style="max-width: 120px;">
+        </div>
+        
+        <div class="contact text-end">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-envelope"></i> elnuradoplus@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +44 7674550825</p>
+            <p><i class="fas fa-map-marker-alt"></i> 92 Brian Statham Way St, Old Trafford, MAN</p>
+            <p><i class="fas fa-comment-alt"></i> <a href="aboutus.html#feedback-section">Share Your Thoughts</a></p>
+        </div>
+    
+        <div class="social-links text-center">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    
+        <div class="copyright text-center mt-2">© 2025 EL Nurado+</div>
+    </footer>
+
+    <!--JS Code for feedback Section Which redirect to success page-->
+    <script src="cart.js"></script>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            window.location.href = "success.html";
+        });
+    </script>
+    
+    <!-- JS Links-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+</body>
+</html>

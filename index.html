@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>EL Nurado</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=Forum&family=Lato:wght@100..900&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Fonts Links-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+    <!-- Universal styling of fonts is applied to every single page. -->
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', serif;
+        }
+    </style>
+
+    <!--Main Section-->
+</head>
+<body>
+  <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./images/LOGO.png" alt="Company Logo" width="100"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-white">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="cart-icon"><i class="fas fa-cart-plus"></i> 
+                          <span id="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Carousel -->
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+      <!-- Slide 1:  Main GIF -->
+      <div class="carousel-item active">
+          <div class="container-fluid p-0 position-relative">
+              <img src="images/main1.gif" class="img-fluid w-100" alt="Main Banner" style="height: 600px; object-fit: cover;">
+              <div class="position-absolute top-50 end-0 translate-middle-y text-white text-end pe-5">
+                  <h1 class="fw-bold display-2.80">Clásico, Moderno, Icónico</h1>
+                  <p class="fs-4">Fashion is temporary, but style is over lasting</p>
+                  <a href="products.html" class="btn btn-lg fw-bold">Shop Now</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Slide 2: Main Hero -->
+      <div class="carousel-item">
+          <div class="container-fluid p-0 position-relative">
+              <img src="images/demomain.jpg" class="img-fluid w-100" alt="Main Banner" style="height: 600px; object-fit: cover;">
+              <div class="position-absolute top-50 end-0 translate-middle-y text-black text-end pe-5">
+                  <h1 class="fw-bold display-2.80">Clásico, Moderno, Icónico</h1>
+                  <p class="fs-4">Fashion is temporary, but style is over lasting</p>
+                  <a href="products.html" class="btn btn-lg fw-bold text-black">Shop Now</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+
+<!-- Products Section -->
+<div class="container-fluid py-5 bg-black">
+    <h2 class="text-center text-white fw-bold mb-5">EL NURADO+</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Demo 1 -->
+      <div class="col">
+        <div class="card product-card text-white border-0 shadow-lg rounded-3 overflow-hidden">
+          <img src="Images/demo1.jpg" class="card-img-top" alt="EL Classico" style="height: 330px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h3 class="card-title fw-bold">EL Classico</h3>
+            <p class="card-text">Casual Comfort</p>
+            <p class="price text-white">$89.99</p>
+            <a href="#" class="btn-custom fw-bold add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Demo 2 -->
+      <div class="col">
+        <div class="card product-card text-white border-0 shadow-lg rounded-3 overflow-hidden">
+          <img src="Images/demo2.jpg" class="card-img-top" alt="EL Camino" style="height: 330px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h3 class="card-title fw-bold">EL Camino</h3>
+            <p class="card-text">Classic Suit</p>
+            <p class="price text-white">$99.99</p>
+            <a href="#" class="btn-custom fw-bold add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Demo 3 -->
+      <div class="col">
+        <div class="card product-card text-white border-0 shadow-lg rounded-3 overflow-hidden">
+          <img src="Images/demo3.jpg" class="card-img-top" alt="EL Chinto" style="height: 330px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h3 class="card-title fw-bold">EL Chinto</h3>
+            <p class="card-text">Bold Statement</p>
+            <p class="price text-white">$199.99</p>
+            <a href="#" class="btn-custom fw-bold add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="products.html" class="btn-custom fw-bold">Discover the Full Collection</a>
+    </div>
+  </div>  
+
+
+  <!-- Main Article Section -->
+<section class="container-fluid bg-black text-white py-5 text-center">
+    <h2 class="fw-bold">El Nurado: Redefining Fashion with Elegance</h2>
+    <p>El Nurado is a leading e-commerce clothing brand that blends modern trends with timeless elegance.</p>
+    <img src="images/mainb.gif" class="img-fluid my-4 rounded" alt="Premium Collections" style="max-width: 50%;">
+    
+    <h2>Quality and Sustainability</h2>
+    <p>We prioritize eco-friendly fabrics and sustainable production methods.</p>
+    <img src="images/main.gif" class="img-fluid my-4 rounded" alt="Quality and Sustainability" style="max-width: 50%;">
+    
+    <h2>Why Choose El Nurado?</h2>
+    <p>El Nurado stands out due to its dedication to quality, innovation, and customer satisfaction.</p>
+    <img src="images/maina.gif" class="img-fluid my-4 rounded" alt="Why Choose El Nurado" style="max-width: 50%;">
+</section>
+
+ <!-- Footer Section -->
+<footer>
+    <div class="logo">
+        <img src="./images/LOGO.png" alt="EL Nurado" style="max-width: 120px;">
+    </div>
+    
+    <div class="contact text-end">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> elnuradoplus@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +44 7674550825</p>
+        <p><i class="fas fa-map-marker-alt"></i> 92 Brian Statham Way St, Old Trafford, MAN</p>
+        <p><i class="fas fa-comment-alt"></i> <a href="aboutus.html#feedback-section">Share Your Thoughts</a></p>
+    </div>
+
+    <div class="social-links text-center">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <div class="copyright text-center mt-2">© 2025 EL Nurado+</div>
+</footer>
+
+ <!-- JS Links-->
+<script src="cart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
